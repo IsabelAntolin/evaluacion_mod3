@@ -1,21 +1,19 @@
 body{
     background-color:#232323
 }
-.square{
-    display: inline-block;
-    width: 30%;
-    height: 0;
-    padding-bottom: 30%;
-    background-color: brown;
-    margin: 1rem 1rem;
-}
-
 .container{
     max-width: 600px;
     margin: 0 auto;
     
 }
-
+.square{
+    display: inline-block;
+    width: 30%;
+    height: 0;
+    padding-bottom: 30%;
+    background-color: rgba(165, 42, 42, 0.549);
+    margin: 2rem 2rem;
+}
 h1{
     color: white;
     text-align: center;
@@ -24,4 +22,33 @@ h1{
     color: white;
     height: 30px;
     text-align: center;
+    margin: 1.5rem 0;
 }
+button{
+    width: 15rem;
+    border-radius: 4rem;
+    padding: 0.2rem 1rem;
+    margin-left: 2rem;
+    border: none;
+    
+}
+
+.contenedorBtn{
+    width: 600px;
+    margin: 0 auto;
+}
+.selected{
+    background-color: rgba(42, 222, 42, 0.527);
+    
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+  /* si deseo desaparecer un elemento, le agrego la siguiente clase */
+  .fadeOut {
+    animation-name: fadeOut;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+  }
